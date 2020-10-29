@@ -48,7 +48,7 @@ class Cashier(Employee):
     super().__init__(name)
     self.orders_checked_out=0
   def __str__(self):
-    return super().__str__() + "\nHAtogijerhgslzk,dfnvkjlk{}".format(self.orders_checked_out)
+    return super().__str__() + "\nOrders checked out: {}".format(self.orders_checked_out)
   def check_out_again(self, order):
     order.checked_out=True
     self.orders_checked_out+=1
